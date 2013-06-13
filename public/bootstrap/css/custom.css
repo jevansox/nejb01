@@ -1,0 +1,17 @@
+footer{
+background:#0882AA;
+color:#fff;
+text-align:center;
+}
+a.brand span{
+font-family:"arial";
+}
+.navbar-inner{
+background:#33ADD5;
+}
+a.brand{
+background:#0882AA;
+}
+a.brand.noBg{
+background:#0882AA;
+}

@@ -6,11 +6,133 @@ html
 		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
 		link(rel='stylesheet', href='/styles/nejb.css')
+		
+		link(rel='stylesheet', href='/bootstrap/css/style.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/style-responsive.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/retina.css')
+		link(rel='stylesheet', href='/bootstrap/css/custom.css')
+
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 		<script src="../assets/js/html5shiv.js"></script>
 		<![endif]-->
-	body
-		block content
-	script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
-	script(src='/bootstrap/js/bootstrap.min.js')
+body
+	.navbar
+		.navbar-inner
+			.container-fluid
+				a.btn.btn-navbar(data-toggle='collapse', data-target='.top-nav.nav-collapse,.sidebar-nav.nav-collapse')
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+						a#main-menu-toggle.hidden-phone.open
+							i.icon-reorder
+				.row-fluid
+					a.brand.span2(href='#')
+						span referralMD™
+					.nav-no-collapse.header-nav
+						ul.nav.pull-right
+							li.dropdown
+								a.btn.account.dropdown-toggle(data-toggle='dropdown', href='#')
+									.avatar
+										img(src='/bootstrap/img/avatar9.jpg', alt='Avatar')
+									.user
+										span.hello Dr. Melvin Helm M.D.
+										span.name St. Agnes Medical Center
+									ul.dropdown-menu
+										li.dropdown-menu-title
+										li
+											a(href='#')
+													| Profile
+										li
+											a(href='#')
+													| Settings
+										li
+											a(href='#')
+													| Messages
+										li
+											a(href='#')
+													| Logout
+#sidebar-left.span2
+	.row-fluid.actions
+		input.search.span12(type='text', placeholder='...')
+		.nav-collapse.sidebar-nav
+			ul.nav.nav-tabs.nav-stacked.main-menu
+				li
+					a(href='#')
+						i.icon-plus
+						span.hidden-tablet  Send a Referral
+				li
+					a(href='#')
+						i.icon-star
+						span.hidden-tablet  Action Center
+				li
+					a(href='#')
+						i.icon-reply
+						span.hidden-tablet  Referrals Received
+				li
+					a(href='#')
+						i.icon-share-alt
+						span.hidden-tablet  Referrals Sent
+				li
+					a(href='#')
+						i.icon-group
+						span.hidden-tablet  Network
+				li
+					a(href='#')
+						i.icon-signal
+						span.hidden-tablet  Reports
+block content
+					#myModal.modal.hide.fade
+						.modal-header
+							button.close(type='button', data-dismiss='modal') ×
+							h3 | Settings
+						.modal-body
+							p | Here settings can be configured...
+						.modal-footer
+							a.btn(href='#', data-dismiss='modal') | Close
+							a.btn.btn-primary(href='#') Save changes
+						.clearfix
+	footer
+		p
+			span(style='text-align: left; float: left;') © 2013 referralMD™
+
+
+script(src='/bootstrap/js/jquery-1.9.1.min.js')
+script(src='/bootstrap/js/jquery-migrate-1.0.0.min.js')
+script(src='/bootstrap/js/jquery-ui-1.10.3.custom.min.js')
+script(src='/bootstrap/js/jquery.ui.touch-punch.js')
+script(src='/bootstrap/js/modernizr.js')
+script(src='/bootstrap/js/bootstrap.min.js')
+script(src='/bootstrap/js/jquery.cookie.js')
+script(src='/bootstrap/js/fullcalendar.min.js')
+script(src='/bootstrap/js/jquery.dataTables.min.js')
+script(src='/bootstrap/js/excanvas.js')
+script(src='/bootstrap/js/jquery.flot.js')
+script(src='/bootstrap/js/jquery.flot.pie.js')
+script(src='/bootstrap/js/jquery.flot.stack.js')
+script(src='/bootstrap/js/jquery.flot.resize.min.js')
+script(src='/bootstrap/js/jquery.flot.time.js')
+script(src='/bootstrap/js/gauge.min.js')
+script(src='/bootstrap/js/jquery.chosen.min.js')
+script(src='/bootstrap/js/jquery.uniform.min.js')
+script(src='/bootstrap/js/jquery.cleditor.min.js')
+script(src='/bootstrap/js/jquery.noty.js')
+script(src='/bootstrap/js/jquery.elfinder.min.js')
+script(src='/bootstrap/js/jquery.raty.min.js')
+script(src='/bootstrap/js/jquery.iphone.toggle.js')
+script(src='/bootstrap/js/jquery.uploadify-3.1.min.js')
+script(src='/bootstrap/js/jquery.gritter.min.js')
+script(src='/bootstrap/js/jquery.imagesloaded.js')
+script(src='/bootstrap/js/jquery.masonry.min.js')
+script(src='/bootstrap/js/jquery.knob.modified.js')
+script(src='/bootstrap/js/jquery.sparkline.min.js')
+script(src='/bootstrap/js/counter.min.js')
+script(src='/bootstrap/js/raphael.2.1.0.min.js')
+script(src='/bootstrap/js/justgage.1.0.1.min.js')
+script(src='/bootstrap/js/jquery.autosize.min.js')
+script(src='/bootstrap/js/retina.js')
+script(src='/bootstrap/js/jquery.placeholder.min.js')
+script(src='/bootstrap/js/wizard.min.js')
+script(src='/bootstrap/js/core.min.js')
+script(src='/bootstrap/js/charts.min.js')
+script(src='/bootstrap/js/custom.min.js')
